@@ -1,0 +1,104 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "bleed": true,
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Actions Done Today",
+                    "weight": "Bolder",
+                    "size": "Medium"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://www.predicagroup.com/app/uploads/2019/08/AzureDevOpsLogo-300x300.png",
+                            "size": "Small"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "weight": "Bolder",
+                            "text": "Task Module - Implementation",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "Contribution time: 4 hr, 15 min",
+                            "isSubtle": true,
+                            "wrap": true,
+                            "fontType": "Default",
+                            "weight": "Lighter"
+                        }
+                    ],
+                    "width": "stretch",
+                    "height": "stretch"
+                }
+            ],
+            "separator": true,
+            "spacing": "Small"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.ShowCard",
+                    "title": "Set goal",
+                    "card": {
+                        "type": "AdaptiveCard",
+                        "body": [
+                            {
+                                "type": "Input.ChoiceSet",
+                                "id": "goal",
+                                "style": "expanded",
+                                "choices": [
+                                    {
+                                        "title": "Commited goals ✨",
+                                        "value": "commited-goals"
+                                    },
+                                    {
+                                        "title": "Collaboration 💡",
+                                        "value": "collaboration"
+                                    },
+                                    {
+                                        "title": "Mentoring 💎",
+                                        "value": "mentoring"
+                                    }
+                                ],
+                                "label": "Choose the right goal for the action:",
+                                "isRequired": true
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "Action.Submit",
+                                "title": "OK",
+                                "data": {
+                                    "FoodChoice": "Steak"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3"
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OfficeDev/microsoft-teams-app-schema/preview/DevPreview/MicrosoftTeams.schema.json",
+  "manifestVersion": "devPreview",
+  "id": "4b0b7c70-d2bc-11ea-a813-bfc190db5187",
+  "version": "0.0.1",
+  "packageName": "acprototype",
+  "developer": {
+    "name": "proto",
+    "websiteUrl": "https://acprototype.azurewebsites.net",
+    "privacyUrl": "https://acprototype.azurewebsites.net/privacy.html",
+    "termsOfUseUrl": "https://acprototype.azurewebsites.net/tou.html"
+  },
+  "name": {
+    "short": "Workday",
+    "full": "Workday Prototype"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "workday",
+      "name": "Home",
+      "contentBotId": "eda13c8b-ec36-4ef5-a600-999c9531a536",
+      "scopes": ["personal"]
+    },
+    {
+      "entityId": "samples",
+      "name": "More",
+      "contentBotId": "eda13c8b-ec36-4ef5-a600-999c9531a536",
+      "scopes": ["personal"]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": [
+    "andhillo-relay.servicebus.windows.net",
+    "acprototype.azurewebsites.net",
+    "token.botframework.com"
+  ]
+}
